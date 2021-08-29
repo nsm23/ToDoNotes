@@ -1,5 +1,5 @@
 from rest_framework.serializers import HyperlinkedModelSerializer
-from .models import MyUsersModel
+from usersapp.models import MyUsersModel
 
 
 class UserSerializer(HyperlinkedModelSerializer):
