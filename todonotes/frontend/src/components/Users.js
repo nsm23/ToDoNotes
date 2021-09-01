@@ -19,11 +19,11 @@ const User = ({user}) => {
 
         </tr>
 
-    )
+        )
 }
 
 const UsersList = ({users}) => {
-    return (
+    return <div className='body'>
         <table>
             <tr>
                 <th>Username</th>
@@ -34,7 +34,8 @@ const UsersList = ({users}) => {
             {users.map((user)=> <User user={user}/>)}
 
         </table>
-    )
+        </div>
+
 }
 
 export default UsersList;
