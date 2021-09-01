@@ -1,10 +1,9 @@
 from django.shortcuts import render
 
-# Create your views here.
 from rest_framework.viewsets import ModelViewSet
 
-from .models import MyUsersModel
-from .serializers import UserSerializer
+from usersapp.models import MyUsersModel
+from usersapp.serializers import UserSerializer
 
 
 class UsersModelViewSet(ModelViewSet):
