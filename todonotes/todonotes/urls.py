@@ -28,6 +28,4 @@ router.register('notes', NoteModelViewSet)
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', include(router.urls)),
-    path('project/', include(router.urls)),
-    path('notes/', include(router.urls))
 ]

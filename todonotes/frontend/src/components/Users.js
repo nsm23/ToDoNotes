@@ -16,14 +16,13 @@ const User = ({user}) => {
             <td>
                 {user.email}
             </td>
-
         </tr>
 
-        )
+    )
 }
 
 const UsersList = ({users}) => {
-    return <div className='body'>
+    return (<div className='body'>
         <table>
             <tr>
                 <th>Username</th>
@@ -31,10 +30,10 @@ const UsersList = ({users}) => {
                 <th>Last name</th>
                 <th>Email</th>
             </tr>
-            {users.map((user)=> <User user={user}/>)}
-
+            {users.map((user) => <User user={user}/>)}
         </table>
-        </div>
+    </div>
+    );
 
 }
 

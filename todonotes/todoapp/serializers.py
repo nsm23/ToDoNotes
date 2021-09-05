@@ -1,11 +1,12 @@
+from django.db.migrations import serializer
 from rest_framework.relations import StringRelatedField
-from rest_framework.serializers import Serializer
+from rest_framework.serializers import ModelSerializer
 
 from todoapp.models import ProjectModel, NoteModel
 from usersapp.serializers import UserSerializer
 
 
-class ProjectModelSerializer(Serializer):
+class ProjectModelSerializer(ModelSerializer):
     author = UserSerializer
 
     class Meta:
@@ -13,7 +14,7 @@ class ProjectModelSerializer(Serializer):
         fields = '__all__'
 
 
-class NoteModelSerializer(Serializer):
+class NoteModelSerializer(ModelSerializer):
     authors = StringRelatedField(many=True)
 
     class Meta:

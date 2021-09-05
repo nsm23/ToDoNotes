@@ -37,8 +37,8 @@ class App extends React.Component {
                 <Header/>
                 <UsersList users={this.state.users}/>
                 <Footer/>
-        </div>
-    )
+            </div>
+        )
     }
 }
 
